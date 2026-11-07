@@ -1,0 +1,33 @@
+=== nominal: 10 s, log in log_nominal.csv
+[0.030] fdir: processing ALARM
+[0.060] fdir: processing cleared
+=== imu_dropout: 10 s, log in log_imu_dropout.csv
+[0.030] fdir: processing ALARM
+[0.060] fdir: processing cleared
+[3.000] scenario: imu1 -> silent
+[3.030] fdir: imu1 ALARM
+[5.000] scenario: imu2 -> silent
+[5.030] fdir: imu2 ALARM
+[7.000] scenario: imu3 -> silent
+[7.020] fdir: processing ALARM
+[7.020] fdir: imu3 ALARM
+=== gnss_gap: 10 s, log in log_gnss_gap.csv
+[0.030] fdir: processing ALARM
+[0.070] fdir: processing cleared
+[4.001] scenario: gnss1 -> silent
+[4.001] scenario: gnss2 -> silent
+[4.160] fdir: gnss1 ALARM
+[4.160] fdir: gnss2 ALARM
+[4.500] scenario: gnss1 -> nominal
+[4.500] scenario: gnss2 -> nominal
+[4.560] fdir: gnss1 cleared
+[4.560] fdir: gnss2 cleared
+=== imu_slow: 10 s, log in log_imu_slow.csv
+[0.020] fdir: processing ALARM
+[0.070] fdir: processing cleared
+[2.001] scenario: imu1 -> slow
+[2.040] fdir: imu1 ALARM
+[2.046] task: imu1 deadline missed
+[4.000] scenario: imu1 -> nominal
+[4.010] task: imu1 back on time
+[4.020] fdir: imu1 cleared
