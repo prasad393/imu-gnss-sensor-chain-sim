@@ -1,0 +1,10 @@
+# Build outputs
+build/
+*.o
+sim
+sim.exe
+test_rules
+test_rules.exe
+
+# CSV files written by local runs (sample runs live in logs/)
+/log_*.csv
